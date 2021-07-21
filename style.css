@@ -83,6 +83,15 @@
 	- @media screen and (max-width: 480px)
 */
 
+
+/*===============================================*/
+
+
+/* 01. GENERAL			 						 */
+
+
+/*===============================================*/
+
 body {
     margin: 0;
     padding: 0;
@@ -101,15 +110,6 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
-}
-
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
