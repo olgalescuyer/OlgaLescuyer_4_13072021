@@ -149,11 +149,6 @@ button {
 }
 
 button,
-select {
-    text-transform: none
-}
-
-button,
 html input[type=button],
 input[type=reset],
 input[type=submit] {
@@ -3691,7 +3686,6 @@ textarea.input-lg {
 .btn.focus,
 .btn:focus,
 .btn:hover {
-    color: #333;
     text-decoration: none
 }
 
