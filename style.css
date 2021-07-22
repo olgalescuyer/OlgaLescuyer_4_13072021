@@ -1,32 +1,90 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #FFF;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+/*---------------------- 
+	Stylesheet Guide
+------------------------
 
-a,
-button {
-    transition: all .3s ease-in-out;
-    outline: none!important;
-}
+01. GENERAL
 
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
+02. NAV BAR
 
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-}
+03. LOGO
+	
+04. NAV MENU
+	04.1 Parent Menu
 
+	
+05. SIDE NAV MENU
+	05.1 Sidebar
+	
+
+06. MAIN-SLIDER
+	06.1 Main Slider Height
+	
+	
+07. PAGE ELEMENT
+	07.1 Blurb
+	
+
+08. ICON
+	08.1 Size
+	
+	
+09. PHOTO ITEM
+	09.1 Image
+	09.2 Layer
+		09.2.1 Layer : Second Image
+		09.2.2 Layer : Black Overlay 
+		09.2.3 Layer : Photo Caption
+		09.2.4 Layer : Icon / Button Link  
+	09.3 on Hover Animation
+		09.3.1 on Hover Animation Duration
+		09.3.2 on Hover Animation Delay	
+		09.3.3 on Hover Zoom In	
+		09.3.4 on Hover Zoom In and Rotate
+		09.3.5 on Hover Fade Out
+		
+10. BUTTON
+	10.1 Color
+		10.1.1 Default
+		10.1.2 Reverse	
+	
+	10.2 Size
+	10.1 Rounded
+	
+11. FORM
+	11.1 Form Group
+	11.2 Form Control
+	11.3 Input Group
+	11.4 Label
+	11.5 Button
+	11.6 Checkbox and Radio(Custom)
+	11.7 Select Option
+	11.8 Message
+	11.9 Validation		
+	
+12. GALLERY	
+	12.1 Full Gallery
+	12.2 Masonry Gallery
+	
+13. OTHER CUSTOM STYLE
+	13.1 Interest Place Title
+	13.2 Bridesmaid / Groomsmen Name & Duty
+	13.3 Accomodation List
+
+
+	
+98. OPTION SETTING	
+	
+99. MEDIA SCREEN
+	- @media screen and (max-width: 1366px)
+	- @media screen and (max-width: 1200px)
+	- @media screen and (max-width: 991px)
+	- @media screen and (max-width: 768px)
+	- @media screen and (max-width: 768px) and (orientation : landscape)
+	- @media screen and (max-width: 480px)
+*/
+
+
+/*
 .bloc {
     width: 100%;
     clear: both;
@@ -78,21 +136,6 @@ a:hover {
 
 .bg-t-edge {
     background: top no-repeat;
-}
-
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -277,8 +320,8 @@ a:hover {
     margin-left: 0;
 }
 
-.row.row-no-gutters > [class^="col-"],
-.row.row-no-gutters > [class*=" col-"] {
+.row.row-no-gutters>[class^="col-"],
+.row.row-no-gutters>[class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
 }
@@ -322,18 +365,18 @@ a:hover {
     z-index: 1;
 }
 
-.nav > li {
+.nav>li {
     float: left;
     margin-top: 4px;
     font-size: 16px;
 }
 
-.navbar-nav .open .dropdown-menu > li > a {
+.navbar-nav .open .dropdown-menu>li>a {
     text-align: inherit;
 }
 
-.nav > li a:hover,
-.nav > li a:focus {
+.nav>li a:hover,
+.nav>li a:focus {
     background: transparent;
 }
 
@@ -370,8 +413,8 @@ a:hover {
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
+    .nav>li .dropdown-menu a,
+    .nav>li .dropdown-menu a:hover {
         color: #484848;
     }
     .nav-invert .site-navigation {
@@ -386,7 +429,7 @@ a:hover {
     }
     .nav-center .navbar-header,
     .nav-center .navbar-brand,
-    .nav-center .nav > li {
+    .nav-center .nav>li {
         float: none;
         display: inline-block;
     }
@@ -403,7 +446,7 @@ a:hover {
     }
 }
 
-.nav > li > .dropdown a {
+.nav>li>.dropdown a {
     background: none!important;
     display: block;
     padding: 14px 15px;
@@ -445,34 +488,8 @@ nav .caret {
     margin-bottom: 40px;
 }
 
-.btn {
-    margin: 0 5px 5px 0;
-}
-
 .btn.pull-right {
     margin: 0 0 5px 5px;
-}
-
-.btn-d,
-.btn-d:hover,
-.btn-d:focus {
-    color: #FFF;
-    background: rgba(0, 0, 0, .3);
-}
-
-button {
-    outline: none!important;
-}
-
-.btn-rd {
-    border-radius: 40px;
-}
-
-.btn-clean {
-    border: 1px solid rgba(0, 0, 0, .08);
-    border-bottom-color: rgba(0, 0, 0, .1);
-    text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
-    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
 
 .icon-md {
@@ -639,21 +656,6 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
-    font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
-}
-
 .container {
     max-width: 1000px;
 }
@@ -688,15 +690,6 @@ p {
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
-}
-
-.cta-hero {
-    margin-top: 22px;
-    color: #FFFFFF!important;
-    text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
-    font-size: 16px;
-    font-weight: 700;
 }
 
 .social {
@@ -766,26 +759,12 @@ h4 {
     background-color: #FFFFFF;
 }
 
-.bgc-dark-slate-blue {
-    background-color: #364577;
-}
-
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
 
 .tc-white {
     color: #F3976C!important;
-}
-
-.btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
-}
-
-.btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
 }
 
 .ltc-white {
@@ -817,14 +796,6 @@ h4 {
     background-image: url("img/lines-h2-bg.png");
 }
 
-.bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
-}
-
-.bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
-}
-
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -839,6 +810,134 @@ h4 {
     }
 }
 
+
+
+/*===============================================*/
+
+
+/* 01. GENERAL			 						 */
+
+
+/*===============================================*/
+
+
+/*police pour le title dans le header : */
+
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+/*styles de base, fondation :*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    overflow-x: hidden;
+    font-family: "helvetica";
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header__head-tile {
+    font-family: 'Yeon Sung', cursive;
+}
+
+
+/* + reset : */
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+
+/*===============================================*/
+
+
+/* 0. SECTION-WELCOME			 				 */
+
+
+/*===============================================*/
+
+.bgc-dark-slate-blue {
+    background-color: #364577;
+}
+
+.welcome__baner {
+    background-image: url("img/img-min/baner-welcome-min.jpg");
+}
+
+.bloc-bg-texture::before {
+    content: "";
+    background: url("img/img-min/bg-texture-min.png");
+    background-size: 100px 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/*===============================================*/
+
+
+/* 0. SECTION-CONTACT			 				 */
+
+
+/*===============================================*/
+
+.contact__btn {
+    transition: all .3s ease-in-out;
+    color: white;
+}
+
+.btn_atomic-tangerine {
+    background: #F3976C;
+}
+
+.btn_atomic-tangerine:hover {
+    background: #c27956;
+}
+
+
+/*===============================================*/
+
+
+/* 0. BUTTON			 						 */
+
+
+/*===============================================*/
+
+.btn {
+    margin: 0 5px 5px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 40px;
+    margin-top: 22px;
+    padding: 12px 28px 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/*
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
@@ -923,7 +1022,7 @@ h4 {
         -webkit-transform: none;
         -ms-transform: none;
     }
-    .nav > li {
+    .nav>li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
         background: rgba(0, 0, 0, .05);
@@ -931,7 +1030,7 @@ h4 {
         padding-left: 15px;
         width: 100%;
     }
-    .nav > li:hover {
+    .nav>li:hover {
         background: rgba(0, 0, 0, .08);
     }
     .dropdown .dropdown a .caret {
