@@ -106,10 +106,10 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    background: #FFFFFF;
     overflow-x: hidden;
     font-family: "helvetica";
-    font-weight: 400;
+    font-size: 1em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -130,6 +130,12 @@ a {
 button {
     border: none;
     outline: none;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
 }
 
 
@@ -171,7 +177,6 @@ button {
 
 .btn_atomic-tangerine:hover {
     background: #c27956;
-    color: #FFFFFF;
 }
 
 .bloc {
