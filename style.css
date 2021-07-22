@@ -142,6 +142,43 @@ li {
 /*===============================================*/
 
 
+/* 0. SECTION-WELCOME			 				 */
+
+
+/*===============================================*/
+
+.bg-presentation {
+    background-image: url("img/img-min/baner-welcome-min.jpg");
+}
+
+.bgc-dark-slate-blue {
+    background-color: #364577!important;
+}
+
+.welcome__baner {
+    background-image: url("img/img-min/baner-welcome-min.jpg");
+    width: 100%;
+}
+
+.texture-paper::before {
+    background: url("img/img-min/bg-texture-min.png");
+    background-size: 280px 280px;
+}
+
+.bloc-bg-texture::before {
+    content: "";
+    background-size: 2px 2px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/*===============================================*/
+
+
 /* 0. SECTION-CONTACT			 				 */
 
 
@@ -230,21 +267,6 @@ li {
 
 .bg-t-edge {
     background: top no-repeat;
-}
-
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -868,10 +890,6 @@ h4 {
     background-color: #FFFFFF;
 }
 
-.bgc-dark-slate-blue {
-    background-color: #364577;
-}
-
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
@@ -907,14 +925,6 @@ h4 {
 
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
-}
-
-.bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
-}
-
-.bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
 }
 
 @media (max-width: 1024px) {
