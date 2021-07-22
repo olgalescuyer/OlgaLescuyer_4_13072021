@@ -83,139 +83,6 @@
 	- @media screen and (max-width: 480px)
 */
 
-
-/*===============================================*/
-
-
-/* 01. GENERAL			 						 */
-
-
-/*===============================================*/
-
-
-/*police pour le title dans le header : */
-
-@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
-
-/*styles de base, fondation :*/
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: #FFFFFF;
-    overflow-x: hidden;
-    font-family: "helvetica";
-    font-size: 1em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.header__head-tile {
-    font-family: 'Yeon Sung', cursive;
-}
-
-
-/* + reset : */
-
-a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
-
-button {
-    border: none;
-    outline: none;
-}
-
-ul,
-li {
-    list-style: none;
-    padding: 0;
-}
-
-
-/*===============================================*/
-
-
-/* 0. SECTION-WELCOME			 				 */
-
-
-/*===============================================*/
-
-.bg-presentation {
-    background-image: url("img/img-min/baner-welcome-min.jpg");
-}
-
-.bgc-dark-slate-blue {
-    background-color: #364577!important;
-}
-
-.welcome__baner {
-    background-image: url("img/img-min/baner-welcome-min.jpg");
-    width: 100%;
-}
-
-.texture-paper::before {
-    background: url("img/img-min/bg-texture-min.png");
-    background-size: 280px 280px;
-}
-
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-
-/*===============================================*/
-
-
-/* 0. SECTION-CONTACT			 				 */
-
-
-/*===============================================*/
-
-.contact__btn {
-    transition: all .3s ease-in-out;
-}
-
-
-/*===============================================*/
-
-
-/* 0. BUTTON			 						 */
-
-
-/*===============================================*/
-
-.btn {
-    margin: 0 5px 5px 0;
-    text-transform: uppercase;
-    border-radius: 40px;
-    margin-top: 22px;
-    padding: 12px 28px 12px 28px;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.btn_atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF;
-}
-
-.btn_atomic-tangerine:hover {
-    background: #c27956;
-}
-
 .bloc {
     width: 100%;
     clear: both;
@@ -939,6 +806,139 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+}
+
+
+/*===============================================*/
+
+
+/* 01. GENERAL			 						 */
+
+
+/*===============================================*/
+
+
+/*police pour le title dans le header : */
+
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+/*styles de base, fondation :*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    overflow-x: hidden;
+    font-family: "helvetica";
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header__head-tile {
+    font-family: 'Yeon Sung', cursive;
+}
+
+
+/* + reset : */
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+
+/*===============================================*/
+
+
+/* 0. SECTION-WELCOME			 				 */
+
+
+/*===============================================*/
+
+.bg-presentation {
+    background-image: url("img/img-min/baner-welcome-min.jpg");
+}
+
+.bgc-dark-slate-blue {
+    background-color: #364577;
+}
+
+.welcome__baner {
+    background-image: url("img/img-min/baner-welcome-min.jpg");
+    width: 100%;
+}
+
+.texture-paper::before {
+    background: url("img/img-min/bg-texture-min.png");
+    background-size: 280px 280px;
+}
+
+.bloc-bg-texture::before {
+    content: "";
+    background-size: 2px 2px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/*===============================================*/
+
+
+/* 0. SECTION-CONTACT			 				 */
+
+
+/*===============================================*/
+
+.contact__btn {
+    transition: all .3s ease-in-out;
+}
+
+
+/*===============================================*/
+
+
+/* 0. BUTTON			 						 */
+
+
+/*===============================================*/
+
+.btn {
+    margin: 0 5px 5px 0;
+    text-transform: uppercase;
+    border-radius: 40px;
+    margin-top: 22px;
+    padding: 12px 28px 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn_atomic-tangerine {
+    background: #F3976C;
+    color: #FFFFFF;
+}
+
+.btn_atomic-tangerine:hover {
+    background: #c27956;
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
