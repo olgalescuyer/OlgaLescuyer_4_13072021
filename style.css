@@ -872,17 +872,12 @@ li {
 
 /*===============================================*/
 
-.bg-presentation {
-    background-image: url("img/img-min/baner-welcome-min.jpg");
-}
-
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
 
 .welcome__baner {
     background-image: url("img/img-min/baner-welcome-min.jpg");
-    width: 100%;
 }
 
 .texture-paper::before {
