@@ -883,14 +883,10 @@ li {
     background-image: url("img/img-min/baner-welcome-min.jpg");
 }
 
-.texture-paper::before {
-    background: url("img/img-min/bg-texture-min.png");
-    background-size: 280px 280px;
-}
-
 .bloc-bg-texture::before {
     content: "";
-    background-size: 2px 2px;
+    background: url("img/img-min/bg-texture-min.png");
+    background-size: 100px 100px;
     position: absolute;
     top: 0;
     bottom: 0;
