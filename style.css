@@ -844,6 +844,19 @@ h4 {
     font-family: 'Yeon Sung', cursive;
 }
 
+
+/*===============================================*/
+
+
+/* 0. SECTION-WELCOME	 						 */
+
+
+/*===============================================*/
+
+.welcome__logo {
+    width: 100px;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
