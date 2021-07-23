@@ -94,7 +94,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/img-min/bg-texture-min.png");
     background-size: 280px 280px;
 }
 
@@ -811,12 +811,8 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/img-min/bg-line-min.png");
 }
 
 .bg-banniere {
@@ -825,7 +821,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/img-min/baner-article-min.jpg");
 }
 
 
