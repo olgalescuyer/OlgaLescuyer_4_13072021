@@ -470,7 +470,7 @@ button {
 }
 
 .icon-lg {
-    font-size: 60px!important;
+    font-size: 3.5em;
 }
 
 .sm-shadow {
@@ -747,21 +747,17 @@ h4 {
     background-color: #364577;
 }
 
-.bgc-atomic-tangerine {
-    background-color: #F3976C;
-}
-
 .tc-white {
-    color: #F3976C!important;
+    color: #eebe4c;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: #eebe4c;
+    color: #343334 !important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #d9434e;
     color: #FFFFFF!important;
 }
 
