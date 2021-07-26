@@ -8,15 +8,23 @@ body {
 }
 
 a {
+    cursor: pointer;
     transition: all 1s ease-in-out;
     opacity: 1;
 }
 
 a:hover {
-    text-decoration: none;
-    cursor: pointer;
     opacity: .7;
 }
+
+
+/*===============================================*/
+
+
+/* 0. BLOCS         	 						 */
+
+
+/*===============================================*/
 
 .bloc {
     width: 100%;
@@ -40,16 +48,21 @@ a:hover {
 }
 
 .bloc-md {
-    padding: 40px;
+    padding: 50px;
 }
 
 .bloc-sm {
     padding: 20px 50px;
 }
 
-.blockquote {
-    border: none;
-}
+
+/*===============================================*/
+
+
+/* 0. BGS         	 						 */
+
+
+/*===============================================*/
 
 .bg-center,
 .bg-l-edge,
@@ -90,37 +103,16 @@ a:hover {
     background-size: 280px 280px;
 }
 
+.bgc-dark-slate-blue {
+    background-color: #364577;
+}
+
 .b-parallax {
     background-attachment: fixed;
 }
 
-.d-bloc .icon-round,
-.d-bloc .icon-square,
-.d-bloc .icon-rounded,
-.d-bloc .icon-semi-rounded-a,
-.d-bloc .icon-semi-rounded-b {
-    border-color: rgba(255, 255, 255, .9);
-}
-
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
-}
-
-.d-bloc .panel button:hover,
-.l-bloc button:hover {
-    color: rgba(0, 0, 0, .7);
-}
-
-.l-bloc .icon-round,
-.l-bloc .icon-square,
-.l-bloc .icon-rounded,
-.l-bloc .icon-semi-rounded-a,
-.l-bloc .icon-semi-rounded-b {
-    border-color: rgba(0, 0, 0, .7);
-}
-
-.l-bloc .navbar-toggle .icon-bar {
-    color: rgba(0, 0, 0, .6);
 }
 
 .voffset {
@@ -137,6 +129,15 @@ a:hover {
     padding-right: 0;
     padding-left: 0;
 }
+
+
+/*===============================================*/
+
+
+/* 0. HEADER			 						 */
+
+
+/*===============================================*/
 
 .navbar {
     margin-bottom: 0;
@@ -180,11 +181,6 @@ a:hover {
 
 .navbar-nav .open .dropdown-menu>li>a {
     text-align: inherit;
-}
-
-.nav>li a:hover,
-.nav>li a:focus {
-    background: transparent;
 }
 
 .navbar-toggle {
@@ -295,35 +291,8 @@ nav .caret {
     margin-bottom: 40px;
 }
 
-.btn.pull-right {
-    margin: 0 0 5px 5px;
-}
-
 .sm-shadow {
     text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
-}
-
-.panel-sq,
-.panel-sq .panel-heading,
-.panel-sq .panel-footer {
-    border-radius: 0;
-}
-
-.panel-rd {
-    border-radius: 30px;
-}
-
-.panel-rd .panel-heading {
-    border-radius: 29px 29px 0 0;
-}
-
-.panel-rd .panel-footer {
-    border-radius: 0 0 29px 29px;
-}
-
-.form-control {
-    border-color: rgba(0, 0, 0, .1);
-    box-shadow: none;
 }
 
 .scrollToTop {
@@ -416,13 +385,6 @@ a[data-lightbox]:hover img {
     opacity: 0.3;
 }
 
-.close-lightbox:hover,
-.next-lightbox:hover,
-.prev-lightbox:hover {
-    opacity: 1.0;
-    color: #FFF;
-}
-
 .next-lightbox,
 .prev-lightbox {
     font-size: 20px;
@@ -503,10 +465,6 @@ a[data-lightbox]:hover img {
     padding: 40px 40px 40px 40px;
 }
 
-.bgc-dark-slate-blue {
-    background-color: #364577;
-}
-
 
 /*===============================================*/
 
@@ -518,6 +476,20 @@ a[data-lightbox]:hover img {
 
 button {
     outline: none!important;
+}
+
+a {
+    text-decoration: none;
+}
+
+blockquote {
+    border: none;
+}
+
+ul,
+li {
+    list-style: none;
+    padding-left: 0;
 }
 
 
@@ -653,7 +625,7 @@ h4 {
 /*===============================================*/
 
 
-/* 0. IMAGES			 						 */
+/* 0. BG-IMAGES			 						 */
 
 
 /*===============================================*/
@@ -669,19 +641,6 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/img-min/baner-article-min.jpg");
-}
-
-
-/*===============================================*/
-
-
-/* 0. HEADER			 						 */
-
-
-/*===============================================*/
-
-.header__head-title {
-    font-family: 'Yeon Sung', cursive;
 }
 
 
@@ -719,13 +678,8 @@ h4 {
     font-size: .9em;
 }
 
-.contact__title {
-    color: #eebe4c;
-    line-height: 1.2;
-    font-size: 2.1em;
-    font-weight: 700;
-    line-height: 1.2;
-    position: relative;
+.content__title {
+    font-size: 1.8em;
 }
 
 
@@ -778,6 +732,11 @@ h4 {
 
 /*===============================================*/
 
+.footer__logo {
+    width: 50px;
+    height: auto;
+}
+
 .footer__bg {
     background: rgb(217, 67, 78);
     background: linear-gradient(168deg, rgba(217, 67, 78, 1) 0%, rgba(238, 190, 76, 1) 100%);
@@ -786,6 +745,11 @@ h4 {
 .footer__text {
     font-size: 1.5em;
     font-weight: 600;
+}
+
+.footer__box {
+    width: 100%;
+    display: flex;
 }
 
 @media (max-width: 1024px) {
