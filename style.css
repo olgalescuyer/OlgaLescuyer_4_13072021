@@ -293,8 +293,7 @@ a:hover {
 .navbar-brand img {
     margin: 0 5px 0 0;
     display: inline;
-    width: 40px;
-    height: auto;
+    height: 50px;
 }
 
 .navbar-brand img[src$=svg] {
@@ -639,7 +638,7 @@ label,
 .btn,
 a {
     font-size: 1.1em;
-    color: #575757!important;
+    color: #343334 !important;
 }
 
 .container {
