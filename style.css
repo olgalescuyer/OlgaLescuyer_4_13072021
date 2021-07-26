@@ -10,15 +10,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-a,
-button {
-    transition: all .3s ease-in-out;
-    outline: none!important;
+a {
+    transition: all 1s ease-in-out;
+    opacity: 1;
 }
 
 a:hover {
     text-decoration: none;
     cursor: pointer;
+    opacity: .7;
 }
 
 .bloc {
@@ -132,23 +132,6 @@ a:hover {
 .d-bloc h6 a,
 .d-bloc p a {
     color: rgba(255, 255, 255, .6);
-}
-
-.d-bloc .a-btn:hover,
-.d-bloc .navbar a:hover,
-.d-bloc .navbar-brand:hover,
-.d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
-.d-bloc a:hover .icon-lg,
-.d-bloc a:hover .icon-xl,
-.d-bloc h1 a:hover,
-.d-bloc h2 a:hover,
-.d-bloc h3 a:hover,
-.d-bloc h4 a:hover,
-.d-bloc h5 a:hover,
-.d-bloc h6 a:hover,
-.d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -458,10 +441,7 @@ button {
 }
 
 .btn-clean {
-    border: 1px solid rgba(0, 0, 0, .08);
-    border-bottom-color: rgba(0, 0, 0, .1);
-    text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
-    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
+    border: none;
 }
 
 .icon-md {
@@ -758,13 +738,31 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #eebe4c;
+    position: relative;
+    opacity: 1;
+    z-index: 3;
+    transition: opacity 1000ms ease-in-out;
+    background: linear-gradient(138deg, rgba(217, 67, 78, 1) 0%, rgba(238, 190, 76, 1) 100%);
     color: #343334 !important;
 }
 
-.btn-atomic-tangerine:hover {
-    background: #d9434e;
-    color: #FFFFFF!important;
+.btn-atomic-tangerine::after {
+    content: "";
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 40px;
+    opacity: 0;
+    background: rgb(217, 67, 78);
+    background: linear-gradient(308deg, rgba(217, 67, 78, 1) 0%, rgba(238, 190, 76, 1) 100%);
+    transition: all 1000ms;
+}
+
+.btn-atomic-tangerine:hover::after {
+    opacity: 1;
 }
 
 .ltc-white {
