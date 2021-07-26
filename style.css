@@ -667,10 +667,6 @@ h4 {
     background-color: #364577;
 }
 
-.tc-white {
-    color: #eebe4c;
-}
-
 .btn-atomic-tangerine {
     position: relative;
     opacity: 1;
@@ -697,22 +693,6 @@ h4 {
 
 .btn-atomic-tangerine:hover::after {
     opacity: 1;
-}
-
-.ltc-white {
-    color: #FFFFFF!important;
-}
-
-.ltc-white:hover {
-    color: #cccccc!important;
-}
-
-.ltc-atomic-tangerine {
-    color: #F3976C!important;
-}
-
-.ltc-atomic-tangerine:hover {
-    color: #c27956!important;
 }
 
 .icon-dark-slate-blue {
@@ -757,6 +737,10 @@ h4 {
 
 .welcome__logo {
     width: 100px;
+}
+
+.welcome__title {
+    color: #eebe4c;
 }
 
 
