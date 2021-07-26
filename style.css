@@ -43,7 +43,7 @@ a:hover {
 }
 
 .bloc-md {
-    padding: 30px;
+    padding: 40px;
 }
 
 .bloc-sm {
@@ -610,7 +610,6 @@ a[data-lightbox]:hover img {
 
 h2,
 h3,
-h4,
 h5,
 h6,
 p,
@@ -618,7 +617,7 @@ label,
 .btn,
 a {
     font-size: 1.1em;
-    color: #333333 !important;
+    color: #333333;
 }
 
 .container {
@@ -686,11 +685,15 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1,
-h4 {
-    line-height: 1.5;
+h1 {
+    line-height: 1.2;
     font-size: 2.1em;
     color: #333333!important;
+}
+
+h4 {
+    line-height: 1.2;
+    font-size: 2.1em;
 }
 
 .icons {
@@ -840,6 +843,70 @@ h4 {
 
 .content__citation {
     font-size: .9em;
+}
+
+.contact__title {
+    color: #eebe4c;
+    line-height: 1.2;
+    font-size: 2.1em;
+    font-weight: 700;
+    line-height: 1.2;
+    position: relative;
+}
+
+
+/*===============================================*/
+
+
+/* 0. SECTION-MISSION	 						 */
+
+
+/*===============================================*/
+
+.mission__like-title {
+    color: #ffd673;
+    line-height: 1.1;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    position: relative;
+}
+
+.mission__text {
+    color: white;
+    font-size: 1.4em;
+}
+
+
+/*===============================================*/
+
+
+/* 0. SECTION-CONTACT	 						 */
+
+
+/*===============================================*/
+
+.contact__title {
+    color: #eebe4c;
+    line-height: 1.2;
+    font-size: 2.1em;
+    font-weight: 700;
+    line-height: 1.2;
+    position: relative;
+}
+
+
+/*===============================================*/
+
+
+/* 0. FOOTER       	 						    */
+
+
+/*===============================================*/
+
+.footer__bg {
+    background: rgb(217, 67, 78);
+    background: linear-gradient(168deg, rgba(217, 67, 78, 1) 0%, rgba(238, 190, 76, 1) 100%);
 }
 
 @media (max-width: 1024px) {
