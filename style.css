@@ -436,11 +436,6 @@ a[data-lightbox]:hover img {
     margin: auto auto auto auto;
 }
 
-.social {
-    max-width: 400px;
-    margin: auto auto auto auto;
-}
-
 .med-width-whitespace {
     max-width: 1000px;
     margin: auto auto auto auto;
@@ -597,6 +592,11 @@ h4 {
 
 
 /*===============================================*/
+
+.social {
+    max-width: 400px;
+    margin: auto auto auto auto;
+}
 
 .icon-md {
     font-size: 30px!important;
@@ -757,7 +757,7 @@ h4 {
 }
 
 .footer__text {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 600;
     padding-bottom: 20px;
 }
