@@ -38,7 +38,7 @@
 
         <header>
             <!-- bloc-0 -->
-            <div class="bloc bgc-white l-bloc" id="bloc-0">
+            <div class="bloc bgc-white l-bloc" id="navigation">
 
                 <div class=" container bloc-sm ">
 
@@ -103,65 +103,73 @@
             </div>
             <!-- bloc-6 END -->
 
-            <!-- bloc-7 -->
-            <div class="bloc bgc-white l-bloc" id="bloc-7">
-                <div class="container bloc-lg">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-                                <div class="form-group">
+            <section>
+                <!-- bloc-7 -->
+                <div class="bloc bgc-white l-bloc bg-lines-h2-bg bg-repeat page-contact__content" id="bloc-7">
 
-                                    <label class="form__element">Nom
-                                    <input id="name" class="form-control" required />
-									</label>
+                    <!-- ScrollToTop Button -->
+                    <a href="#navigation" class="btn btn_scroll" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span><img src="img/img-min/logo-trans-min.png" class="page-contact__logo"/></a>
+                    <!-- ScrollToTop Button END-->
 
-                                </div>
+                    <div class="container bloc-lg">
 
-                                <div class="form-group">
+                        <div class="row">
 
-                                    <label class="form__element">Adresse email
-                                    <input id="email" class="form-control" type="email" required />
-									</label>
+                            <div class="col-sm-6">
+                                <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+                                    <div class="form-group">
 
-                                </div>
+                                        <label class="form__element">Nom
+										<input id="name" class="form-control" required />
+										</label>
 
-                                <div class="form-group">
+                                    </div>
 
-                                    <label class="form__element">Comment nous avez-vous connu ?
-                                    <input class="form-control" type="email" required id="input_504" />
-									</label>
+                                    <div class="form-group">
 
-                                </div>
+                                        <label class="form__element">Adresse email
+										<input id="email" class="form-control" type="email" required />
+										</label>
 
-                                <div class="form-group">
+                                    </div>
 
-                                    <label class="form__element">Brief de votre projet (Ajoutez autant de détails que nécessaire)
-                                    <textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-									</label>
+                                    <div class="form-group">
 
-                                </div>
+                                        <label class="form__element">Comment nous avez-vous connu ?
+											<input class="form-control" type="email" required id="input_504" />
+										</label>
 
-                                <button class="btn" type="submit">Envoyer</button>
+                                    </div>
 
-                            </form>
+                                    <div class="form-group">
 
-                        </div>
+                                        <label class="form__element">Brief de votre projet (Ajoutez autant de détails que nécessaire)
+										<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+										</label>
 
-                        <div class="col-sm-6">
+                                    </div>
 
-                            <p>
-                                contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-                            </p>
+                                    <button class="btn" type="submit">Envoyer</button>
 
+                                </form>
+
+                            </div>
+
+                            <div class="col-sm-6">
+
+                                <p>
+                                    <span class="et-icon-envelope"></span><a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a><br><span class="et-icon-map"></span> place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au
+                                    vendredi
+                                    <br>
+                                </p>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- bloc-7 END -->
 
-            <!-- ScrollToTop Button -->
-            <a class="btn btn_scroll" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span><img src="img/img-min/logo-trans-min.png" class="page-contact__logo"/></a>
-            <!-- ScrollToTop Button END-->
+                </div>
+                <!-- bloc-7 END -->
+            </section>
 
         </main>
 
