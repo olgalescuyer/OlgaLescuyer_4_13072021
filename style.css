@@ -616,7 +616,7 @@ h4 {
 /*===============================================*/
 
 
-/* 0. SECTION-WELCOME	 						 */
+/* 0.WELCOME        	 						 */
 
 
 /*===============================================*/
@@ -675,6 +675,14 @@ h4 {
     font-size: 1.4em;
 }
 
+.mission__link {
+    font-size: 1.3em;
+    font-weight: 600;
+    display: block;
+    text-decoration: underline;
+    text-align: center;
+}
+
 
 /*===============================================*/
 
@@ -687,6 +695,11 @@ h4 {
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
     padding: 25px;
+}
+
+.article__title {
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 
