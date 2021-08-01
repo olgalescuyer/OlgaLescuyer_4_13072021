@@ -412,7 +412,10 @@ a[data-lightbox]:hover img {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .portfolio-row {
@@ -704,6 +707,10 @@ h4 {
     font-weight: 500;
 }
 
+.article__subtitle {
+    padding-top: 24px;
+}
+
 
 /*===============================================*/
 
@@ -776,6 +783,15 @@ h4 {
     position: relative;
 }
 
+
+/*===============================================*/
+
+
+/* 0. MEDIA	     						 */
+
+
+/*===============================================*/
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -822,6 +838,9 @@ h4 {
     .page-container {
         overflow-x: hidden;
         position: relative;
+    }
+    .portfolio-thumb {
+        width: 70%;
     }
     h1,
     h2,
@@ -945,6 +964,9 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .bloc-mob-center-text {
+        text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
@@ -952,10 +974,7 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
+    .portfolio-thumb {
+        width: 100%;
     }
 }
