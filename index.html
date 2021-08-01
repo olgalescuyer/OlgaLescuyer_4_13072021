@@ -55,6 +55,7 @@
                         <div class="navbar-header ">
 
                             <a href="index.html" title="Accueil" class="navbar-brand">
+                                <!--logo a été optimisé -min-->
                                 <img src="img/img-min/logo-brand-min.png" alt="logo brand" />
 
                             </a>
@@ -94,10 +95,13 @@
         </header>
 
         <main>
-            <section class="section-welcome ">
+            <!--SECTION-CONTENT ! balises sémantique main, section, button ajoutées pour l'optimisation : -->
 
+            <section class="section-content">
 
-                <div class="welcome__baner bloc bgc-dark-slate-blue bg-banniere bloc-bg-texture d-bloc texture-paper b-parallax ">
+                <!--Baner-->
+
+                <div class="bloc bgc-dark-slate-blue bg-banniere bloc-bg-texture d-bloc texture-paper b-parallax ">
 
                     <div class="container bloc-lg ">
 
@@ -105,11 +109,12 @@
 
                             <div class="col-sm-12 ">
 
+                                <!--logo a été optimisé -min-->
                                 <img src="img/img-min/logo-min.png " class="welcome__logo center-block" alt="chouette logo" />
 
                                 <span class="welcome__title center-block text-center hero-bloc-text">
-                                    La chouette agence
-                                </span>
+                                        La chouette agence
+                                    </span>
 
                                 <form action="contact.html" method="GET" class="col-sm-12 text-center ">
 
@@ -124,17 +129,18 @@
 
                 </div>
 
-            </section>
+                <!--Content-->
+                <div class="bloc bgc-white l-bloc " id="content">
 
-            <section class="section-content" id="content">
-
-                <div class="bloc bgc-white l-bloc ">
                     <div class="container bloc-md ">
 
                         <div class="row ">
+
                             <div class="col-sm-12 text-center ">
-                                <h1 class="content__title">La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur Internet</h1>
+                                <!--h1 très important, mots-clés pour le SEO est ici-->
+                                <h1 class="content__title ">La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur Internet</h1>
                             </div>
+
                         </div>
 
                         <div class="row voffset-lg med-width-whitespace ">
@@ -149,7 +155,7 @@
                                     Que vous ayez un site web qui a besoin d'un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.
                                 </p>
                             </div>
-                            <div class="col-sm-4  content__element">
+                            <div class="col-sm-4 content__element ">
                                 <div class="text-center ">
                                     <span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg "></span>
                                 </div>
@@ -160,7 +166,7 @@
                                     Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.<br>
                                 </p>
                             </div>
-                            <div class="col-sm-4  content__element">
+                            <div class="col-sm-4 content__element ">
                                 <div class="text-center ">
                                     <span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg "></span>
                                 </div>
@@ -176,13 +182,17 @@
                             <div class="col-xs-12 col-md-8 col-md-offset-2 text-center ">
 
                                 <figure>
-                                    <blockquote cite="https://avosfourchettes.com/ " class="blockquote">
-                                        <p class="content__citation"><cite>"La chouette agence est une exellente agence web ! Les web designers ont reussi à capturé l 'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à
-                Lyon. " </cite></p>
-                                    </blockquote>
-                                    <figcaption>—Maxime Guibard, PDG de <cite>"A vos fourchettes "</cite></figcaption>
-                                </figure>
+                                    <blockquote cite="https://avosfourchettes.com/ " class="blockquote ">
 
+                                        <!--Icones ajoutés par Olga-->
+                                        <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span>
+
+                                        <p class="content__citation "><cite>"La chouette agence est une exellente agence web ! Les web designers ont reussi à capturé l 'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler
+                nos ventes en ligne à Lyon. " </cite></p>
+
+                                    </blockquote>
+                                    <figcaption>— Maxime Guibard, PDG de <cite>"A vos fourchettes "</cite></figcaption>
+                                </figure>
 
                             </div>
                         </div>
@@ -192,7 +202,7 @@
             </section>
 
 
-            <section class="section-mission" id="mission">
+            <section class="section-mission " id="mission">
                 <!-- bloc-3-what-i-do -->
 
                 <div class="bloc tc-white bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax ">
@@ -203,15 +213,15 @@
 
                             <div class="col-sm-12 ">
 
-                                <p class="mg-md text-center mission__like-title">
+                                <h2 class="mg-md text-center mission__like-title ">
                                     Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients.<br>
-                                </p>
+                                </h2>
 
-                                <p class="text-center mission__text">
+                                <p class="text-center mission__text ">
                                     Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre
                                     site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br>
                                 </p>
-
+                                <a class="mission__link" href="contact.html">Contactez notre équipe</a>
                             </div>
 
                         </div>
@@ -232,7 +242,7 @@
 
                         <div class="row ">
                             <div class="col-sm-12 text-center ">
-                                <span>Nous travaillons avec beaucoup de clients, voici nos réalisations :</span>
+                                <span class="article__title">Nous travaillons avec beaucoup de clients, voici nos réalisations :</span>
                             </div>
                         </div>
 
@@ -240,32 +250,32 @@
 
                             <div class="col-sm-6 ">
 
-                                <a href="#" data-lightbox="img/img-min/refonte-site-pour-un-journal-local-min.jpg" data-gallery-id="gallery-1 " data-caption="Refonte d 'un site web pour un journal local" data-frame="snapshot-lb">
+                                <a href="#" data-lightbox="img/img-min/refonte-site-pour-un-journal-local-min.jpg " data-gallery-id="gallery-1 " data-caption="Refonte d 'un site web pour un journal local" data-frame="snapshot-lb">
 
-                                    <img src="img/img-min/refonte-site-pour-un-journal-local-min.jpg" alt="Refonte d'un site web pour un journal local" title="cliquer pour agrandir" class="img-responsive portfolio-thumb" />
+                                    <img src="img/img-min/refonte-site-pour-un-journal-local-min.jpg" alt="Refonte d'un site web pour un journal local " title="cliquer pour agrandir " class="img-responsive portfolio-thumb " />
                                 </a>
 
-                                <h3 class="mg-md text-center">
+                                <h3 class="mg-md text-center ">
                                     Refonte d'un site web pour un journal local
                                 </h3>
 
-                                <p class="text-center">
+                                <p class="text-center ">
                                     Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
                                 </p>
 
                             </div>
 
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 ">
 
-                                <a href="#" data-lightbox="img/img-min/creation-site-pour-photographes-min.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
-                                    <img src="img/img-min/creation-site-pour-photographes-min.jpg" class="img-responsive portfolio-thumb" alt=" Création d'un site web pour photographes" title="cliquer pour agrandir" />
+                                <a href="#" data-lightbox="img/img-min/creation-site-pour-photographes-min.jpg " data-gallery-id="gallery-1 " data-caption="Création d 'un site web pour photographes" data-frame="snapshot-lb">
+                                    <img src="img/img-min/creation-site-pour-photographes-min.jpg" class="img-responsive portfolio-thumb" alt=" Création d'un site web pour photographes " title="cliquer pour agrandir " />
                                 </a>
 
-                                <h3 class="mg-md text-center">
+                                <h3 class="mg-md text-center ">
                                     Création d'un site web pour photographes
                                 </h3>
 
-                                <p class="text-center">
+                                <p class="text-center ">
                                     Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.
                                 </p>
 
@@ -273,28 +283,28 @@
 
                         </div>
 
-                        <div class="row tight-width-whitespace portfolio-row">
+                        <div class="row tight-width-whitespace portfolio-row ">
 
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 ">
 
-                                <a href="#" data-lightbox="img/img-min/creation-site-pour-voyager-min.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
-                                    <img src="img/img-min/creation-site-pour-voyager-min.jpg" class="img-responsive portfolio-thumb" alt=" Création d'un site web pour voyageur" title="cliquer pour agrandir" />
+                                <a href="#" data-lightbox="img/img-min/creation-site-pour-voyager-min.jpg " data-gallery-id="gallery-1 " data-caption="Création d 'un site internet pour un voyageur" data-frame="snapshot-lb">
+                                    <img src="img/img-min/creation-site-pour-voyager-min.jpg" class="img-responsive portfolio-thumb" alt=" Création d'un site web pour voyageur " title="cliquer pour agrandir " />
                                 </a>
 
-                                <h3 class="mg-md text-center">
+                                <h3 class="mg-md text-center ">
                                     Création d'un site internet pour un voyageur
                                 </h3>
 
-                                <p class="text-center">
+                                <p class="text-center ">
                                     Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.
                                 </p>
 
                             </div>
 
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 ">
 
-                                <a href="#" data-lightbox="img/img-min/creation-site-pour-agence-mariage-min.jpg" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
-                                    <img src="img/img-min/creation-site-pour-agence-mariage-min.jpg" class="img-responsive portfolio-thumb" alt="Création d'un site web pour agence de mariage" title="cliquer pour agrandir" />
+                                <a href="# " data-lightbox="img/img-min/creation-site-pour-agence-mariage-min.jpg " data-gallery-id="gallery-1 " data-caption="Conception d 'un site pour une agence de mariage" data-frame="snapshot-lb">
+                                    <img src="img/img-min/creation-site-pour-agence-mariage-min.jpg" class="img-responsive portfolio-thumb" alt="Création d'un site web pour agence de mariage " title="cliquer pour agrandir " />
                                 </a>
 
                                 <h3 class="mg-md text-center">
@@ -313,20 +323,20 @@
             </article>
 
 
-            <section class="contact">
+            <section class="contact ">
 
                 <!-- bloc-5-cta -->
-                <div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper">
+                <div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper ">
 
-                    <div class="container bloc-lg">
+                    <div class="container bloc-lg ">
 
-                        <div class="row">
+                        <div class="row ">
 
-                            <h4 class="mg-md text-center contact__title">
+                            <h4 class="mg-md text-center contact__title ">
                                 Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
                             </h4>
 
-                            <form action="contact.html" method="GET" class="col-sm-12 text-center">
+                            <form action="contact.html " method="GET " class="col-sm-12 text-center ">
                                 <button class="btn ">Contact</button>
                             </form>
 
@@ -341,43 +351,43 @@
 
         <footer>
             <!-- Footer - bloc-8 -->
-            <div class="bloc  d-bloc footer__inner footer__inner_bg">
+            <div class="bloc d-bloc footer__inner footer__inner_bg ">
 
-                <div class="container bloc-sm">
+                <div class="container bloc-sm ">
 
-                    <div class="row">
+                    <div class="row ">
 
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 ">
 
-                            <div class="row">
+                            <div class="row ">
 
-                                <p class="footer__text text-center"> La chouette agence Web basée à Lyon </p>
+                                <p class="footer__text text-center "> La chouette agence Web basée à Lyon </p>
 
                             </div>
 
-                            <div class="row row-no-gutters social">
+                            <div class="row row-no-gutters social ">
 
-                                <div class="col-sm-3">
-                                    <div class="text-center">
-                                        <a href="#"><span class="fa fa-twitter icon-md"></span></a>
+                                <div class="col-sm-3 ">
+                                    <div class="text-center ">
+                                        <a href="# "><span class="fa fa-twitter icon-md "></span></a>
                                     </div>
                                 </div>
 
-                                <div class="col-sm-3">
-                                    <div class="text-center">
-                                        <a href="#"><span class="fa fa-facebook icon-md"></span></a>
+                                <div class="col-sm-3 ">
+                                    <div class="text-center ">
+                                        <a href="# "><span class="fa fa-facebook icon-md "></span></a>
                                     </div>
                                 </div>
 
-                                <div class="col-sm-3">
-                                    <div class="text-center">
-                                        <a href="#"><span class="fa fa-dribbble icon-md"></span></a>
+                                <div class="col-sm-3 ">
+                                    <div class="text-center ">
+                                        <a href="# "><span class="fa fa-dribbble icon-md "></span></a>
                                     </div>
                                 </div>
 
-                                <div class="col-sm-3">
-                                    <div class="text-center">
-                                        <a href="#"><span class="fa fa-instagram icon-md"></span></a>
+                                <div class="col-sm-3 ">
+                                    <div class="text-center ">
+                                        <a href="# "><span class="fa fa-instagram icon-md "></span></a>
                                     </div>
                                 </div>
 
