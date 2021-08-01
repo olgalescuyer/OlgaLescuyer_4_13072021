@@ -90,7 +90,6 @@ a:hover {
 
 .bloc-bg-texture::before {
     content: "";
-    background-size: 2px 2px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -382,8 +381,9 @@ a[data-lightbox]:hover img {
 
 .snapshot-lb .lightbox-caption {
     padding: 0;
-    color: rgba(0, 0, 0, .5);
-    background: none;
+    color: #333333;
+    background: white;
+    text-align: center;
 }
 
 .container {
@@ -606,10 +606,12 @@ h4 {
 .bg-banniere {
     background-image: url("img/img-min/baner-welcome-min.jpg");
     background-size: cover;
+    background-attachment: scroll;
 }
 
 .bg-presentation {
     background-image: url("img/img-min/baner-article-min.jpg");
+    background-attachment: scroll;
 }
 
 
