@@ -412,7 +412,10 @@ a[data-lightbox]:hover img {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .portfolio-row {
@@ -552,6 +555,7 @@ h4 {
 .btn_scroll {
     position: fixed;
     right: 100px;
+    border: 2px solid white;
 }
 
 
@@ -704,6 +708,10 @@ h4 {
     font-weight: 500;
 }
 
+.article__subtitle {
+    padding-top: 24px;
+}
+
 
 /*===============================================*/
 
@@ -764,17 +772,40 @@ h4 {
     background-color: #F3976C;
 }
 
-.page-contact__logo {
+.page-contact__logo-scroll {
     height: 30px;
 }
 
 .form__element {
     width: 100%;
+    line-height: 2em;
 }
 
-.page-contact__conten {
+.page-contact__content {
     position: relative;
 }
+
+.page-contact__text {
+    font-size: 1.1em;
+}
+
+.page-contact__icon {
+    font-weight: 800!important;
+}
+
+.form-control:focus {
+    border: none;
+    box-shadow: 0px 0px 12px 5px rgba(243, 151, 108, 0.37);
+}
+
+
+/*===============================================*/
+
+
+/* 0. MEDIA	     						 */
+
+
+/*===============================================*/
 
 @media (max-width: 1024px) {
     .bloc {
@@ -822,6 +853,9 @@ h4 {
     .page-container {
         overflow-x: hidden;
         position: relative;
+    }
+    .portfolio-thumb {
+        width: 70%;
     }
     h1,
     h2,
@@ -945,6 +979,9 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .bloc-mob-center-text {
+        text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
@@ -952,10 +989,7 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
+    .portfolio-thumb {
+        width: 100%;
     }
 }

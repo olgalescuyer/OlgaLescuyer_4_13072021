@@ -1,43 +1,33 @@
 <!doctype html>
+<!--Correct : lang-->
 <html lang="fr">
 
 <head>
-
     <meta charset="UTF-8">
 
+    <!--Compatibilité-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="description" content="">
 
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="./css/et-line.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 
-
-    <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/blocs.min.js"></script>
-    <script src="./js/jqBootstrapValidation.js"></script>
-    <script src="./js/formHandler.js"></script>
     <title>Contact La chouette Web agence à Lyon</title>
-
-
-    <!-- Analytics -->
-
-    <!-- Analytics END -->
 
 </head>
 
 <body>
     <!-- Principal conteneur -->
     <div class="page-container">
-
+        <!--Amelioration : ajout des balises sémantique main, header, section, article, form, fieldset, button etc-->
         <header>
-            <!-- bloc-0 -->
+
             <div class="bloc bgc-white l-bloc" id="navigation">
 
                 <div class=" container bloc-sm ">
@@ -75,40 +65,38 @@
                     </nav>
                 </div>
             </div>
-            <!-- bloc-0 END -->
+
         </header>
 
         <main>
-            <!-- bloc-6 -->
 
-            <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+            <section class="page-contact">
 
-                <div class="container bloc-lg">
+                <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper">
 
-                    <div class="row">
+                    <div class="container bloc-lg">
 
-                        <div class="col-sm-12">
+                        <div class="row">
+                            <!--Heading du formulaire : -->
+                            <div class="col-sm-12">
 
-                            <h1 class="text-center hero-bloc-text">
-                                Parlons web design !
-                            </h1>
+                                <h1 class="text-center hero-bloc-text">
+                                    Parlons web design !
+                                </h1>
 
-                            <p class="text-center mg-lg tc-white tight-width-whitespace">
-                                Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br> Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-                            </p>
+                                <p class="text-center mg-lg tc-white tight-width-whitespace">
+                                    Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br> Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+                                </p>
 
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- bloc-6 END -->
 
-            <section>
-                <!-- bloc-7 -->
-                <div class="bloc bgc-white l-bloc bg-lines-h2-bg bg-repeat page-contact__content" id="bloc-7">
+                <div class="bloc bgc-white l-bloc bg-lines-h2-bg bg-repeat page-contact__content">
 
                     <!-- ScrollToTop Button -->
-                    <a href="#navigation" class="btn btn_scroll" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span><img src="img/img-min/logo-trans-min.png" class="page-contact__logo"/></a>
+                    <a href="#navigation" title="vers le haut" class="btn btn_scroll" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span><img src="img/img-min/logo-trans-min.png" alt="logo"  class="page-contact__logo-scroll"/></a>
                     <!-- ScrollToTop Button END-->
 
                     <div class="container bloc-lg">
@@ -116,66 +104,91 @@
                         <div class="row">
 
                             <div class="col-sm-6">
-                                <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-                                    <div class="form-group">
+                                <!--FORMULAIRE : -->
+                                <form method="post" action="#" id="form_1">
 
-                                        <label class="form__element">Nom
-										<input id="name" class="form-control" required />
-										</label>
+                                    <fieldset>
+                                        <div class="form-group">
 
-                                    </div>
+                                            <label for="name" class="form__element">Nom :
+                                                <input type="text"  placeholder="Nom ou Société" id="name" class="form-control" required />
+                                            </label>
 
-                                    <div class="form-group">
+                                        </div>
 
-                                        <label class="form__element">Adresse email
-										<input id="email" class="form-control" type="email" required />
-										</label>
+                                        <div class="form-group">
 
-                                    </div>
+                                            <label for="email" class="form__element">Adresse email :
+                                                <input type="email"  placeholder="Email" id="email" class="form-control" required />
+                                            </label>
 
-                                    <div class="form-group">
+                                        </div>
 
-                                        <label class="form__element">Comment nous avez-vous connu ?
-											<input class="form-control" type="email" required id="input_504" />
-										</label>
+                                        <div class="form-group">
 
-                                    </div>
+                                            <label for="list-question" class="form__element">Comment nous avez-vous connu ?
+                                            <input type="text" placeholder="Choisissez :" class="form-control" id="question" list="list-question" required/>
+                                            </label>
+                                            <!--Olga a ajouté plus de fonctionalité : -->
+                                            <datalist id="list-question">
+                                                      
+                                                <option value="Un moteur de recherche"></option>
+                                                <option value="Une publicité papier"></option>
+                                                <option value="Une publicité radio"></option>
+                                                <option value="Le bouche à oreilles"></option>
+                                                <option value="Une lien sur le web"></option>
+    
+                                            </datalist>
 
-                                    <div class="form-group">
 
-                                        <label class="form__element">Brief de votre projet (Ajoutez autant de détails que nécessaire)
-										<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-										</label>
+                                        </div>
 
-                                    </div>
+                                        <div class="form-group">
 
-                                    <button class="btn" type="submit">Envoyer</button>
+                                            <label for="message" class="form__element">Brief de votre projet (Ajoutez autant de détails que nécessaire) :
+                                            <textarea id="message" placeholder="What's on your mind ?" class="form-control" rows="4" cols="50" required></textarea>
+                                            </label>
+
+                                        </div>
+
+                                        <button class="btn" type="submit">Envoyer</button>
+
+                                    </fieldset>
 
                                 </form>
 
                             </div>
 
                             <div class="col-sm-6">
+                                <!--Ici les icones ont été ajoutés :-->
+                                <address class="page-contact__text">
 
-                                <p>
-                                    <span class="et-icon-envelope"></span><a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a><br><span class="et-icon-map"></span> place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au
-                                    vendredi
-                                    <br>
-                                </p>
+                                    <span class="page-contact__icon et-icon-envelope"></span>
+
+                                    <a href="mailto:contact@lachouetteagence.com"><i> contact@lachouetteagence.com</i></a>
+
+                                    </br>
+                                    </br>
+                                    <span class="et-icon-map page-contact__icon"></span> 2 place Sathonay 69001 Lyon
+                                    </br>
+                                    </br>
+
+                                    <span class="et-icon-clock page-contact__icon"></span>  Ouvert de 9h à 18h, du lundi au vendredi
+
+                                </address>
 
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <!-- bloc-7 END -->
+
             </section>
 
         </main>
 
-
         <footer>
-            <!-- Footer - bloc-8 -->
+
             <div class="bloc  d-bloc footer__inner footer__inner_bg" id="bloc-8">
 
                 <div class="container bloc-sm">
@@ -216,21 +229,20 @@
                                 </div>
                             </div>
 
-
-
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Footer - bloc-8 END -->
 
         </footer>
 
-
     </div>
     <!-- Principal conteneur END -->
-
-
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/blocs.min.js"></script>
+    <script src="./js/jqBootstrapValidation.js"></script>
+    <script src="./js/formHandler.js"></script>
 </body>
 
 </html>
