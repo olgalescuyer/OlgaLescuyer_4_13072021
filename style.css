@@ -777,6 +777,7 @@ h4 {
 
 .form__element {
     width: 100%;
+    line-height: 2em;
 }
 
 .page-contact__content {
@@ -789,6 +790,11 @@ h4 {
 
 .page-contact__icon {
     font-weight: 800!important;
+}
+
+.form-control:focus {
+    border: none;
+    box-shadow: 0px 0px 12px 5px rgba(243, 151, 108, 0.37);
 }
 
 
