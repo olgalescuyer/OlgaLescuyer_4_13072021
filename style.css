@@ -555,6 +555,7 @@ h4 {
 .btn_scroll {
     position: fixed;
     right: 100px;
+    border: 2px solid white;
 }
 
 
