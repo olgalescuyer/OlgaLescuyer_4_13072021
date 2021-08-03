@@ -465,6 +465,7 @@ li {
 
 .hero-bloc-text {
     font-size: 3em;
+    font-weight: 700;
 }
 
 h2,
@@ -792,6 +793,11 @@ h4 {
 .page-contact__text {
     font-size: 1.1em;
     padding: 10px;
+}
+
+.page-contact__text_bold {
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
 .page-contact__icon {
