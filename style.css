@@ -1,3 +1,57 @@
+/*---------------------- 
+	Stylesheet Guide
+------------------------
+
+
+01. GENERAL
+
+02. RESET
+
+03. BLOCS
+	
+04. BGS
+
+05. HEADER
+
+06. TITLES
+	
+07. BUTTON
+
+08. ICONES
+	
+09. BG-IMAGES
+		
+10. SECTION-CONTENT
+	
+11. SECTION-MISSION
+	
+12. SECTION-REALISATION + ARTICLE
+
+13. SECTION-CONTACT
+
+14. FOOTER
+
+15. PAGE-CONTACT
+
+	
+99. MEDIA SCREEN
+	- @media screen and (max-width: 1366px)
+	- @media screen and (max-width: 1200px)
+	- @media screen and (max-width: 991px)
+	- @media screen and (max-width: 768px)
+	- @media screen and (max-width: 768px) and (orientation : landscape)
+	- @media screen and (max-width: 480px)
+*/
+
+
+/*===============================================*/
+
+
+/* 01. GENERAL        	 						 */
+
+
+/*===============================================*/
+
 body {
     margin: 0;
     padding: 0;
@@ -21,7 +75,34 @@ a:hover {
 /*===============================================*/
 
 
-/* 0. BLOCS         	 						 */
+/* 02. RESET  			 						 */
+
+
+/*===============================================*/
+
+button {
+    outline: none!important;
+}
+
+a {
+    text-decoration: none;
+}
+
+blockquote {
+    border: none;
+}
+
+ul,
+li {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/*===============================================*/
+
+
+/* 03. BLOCS         	 						 */
 
 
 /*===============================================*/
@@ -59,7 +140,7 @@ a:hover {
 /*===============================================*/
 
 
-/* 0. BGS         	 						 */
+/* 04. BGS         	 						 */
 
 
 /*===============================================*/
@@ -122,7 +203,7 @@ a:hover {
 /*===============================================*/
 
 
-/* 0. HEADER			 						 */
+/* 05. HEADER			 						 */
 
 
 /*===============================================*/
@@ -194,47 +275,6 @@ a:hover {
     float: right;
     position: relative;
     z-index: 2;
-}
-
-@media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
-    .nav>li .dropdown-menu a,
-    .nav>li .dropdown-menu a:hover {
-        color: #484848;
-    }
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
-    }
-    .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav>li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }
 }
 
 .nav>li>.dropdown a {
@@ -431,34 +471,7 @@ a[data-lightbox]:hover img {
 /*===============================================*/
 
 
-/* 0. RESET  			 						 */
-
-
-/*===============================================*/
-
-button {
-    outline: none!important;
-}
-
-a {
-    text-decoration: none;
-}
-
-blockquote {
-    border: none;
-}
-
-ul,
-li {
-    list-style: none;
-    padding-left: 0;
-}
-
-
-/*===============================================*/
-
-
-/* 0. TITLES			 						 */
+/* 06. TITLES			 						 */
 
 
 /*===============================================*/
@@ -513,7 +526,7 @@ h4 {
 /*===============================================*/
 
 
-/* 0. BUTTON			 						 */
+/* 07. BUTTON			 						 */
 
 
 /*===============================================*/
@@ -563,7 +576,7 @@ h4 {
 /*===============================================*/
 
 
-/* 0. ICONS			 						 */
+/* 08. ICONS			 						 */
 
 
 /*===============================================*/
@@ -599,7 +612,7 @@ h4 {
 /*===============================================*/
 
 
-/* 0. BG-IMAGES			 						 */
+/* 09. BG-IMAGES			 						 */
 
 
 /*===============================================*/
@@ -623,7 +636,7 @@ h4 {
 /*===============================================*/
 
 
-/* 0.WELCOME        	 						 */
+/* 10. SECTION-CONTENT	 						 */
 
 
 /*===============================================*/
@@ -636,15 +649,6 @@ h4 {
     color: #eebe4c;
     font-weight: 700;
 }
-
-
-/*===============================================*/
-
-
-/* 0. SECTION-CONTENT	 						 */
-
-
-/*===============================================*/
 
 .content__element {
     padding: 0 25px;
@@ -663,7 +667,7 @@ h4 {
 /*===============================================*/
 
 
-/* 0. SECTION-MISSION	 						 */
+/* 11. SECTION-MISSION	 						 */
 
 
 /*===============================================*/
@@ -694,7 +698,7 @@ h4 {
 /*===============================================*/
 
 
-/* 0. ARTICLE  			 						 */
+/* 12. SECTION-REALISATION + ARTICLE  			 						 */
 
 
 /*===============================================*/
@@ -722,7 +726,7 @@ h4 {
 /*===============================================*/
 
 
-/* 0. SECTION-CONTACT	 						 */
+/* 13. SECTION-CONTACT	 						 */
 
 
 /*===============================================*/
@@ -739,7 +743,7 @@ h4 {
 /*===============================================*/
 
 
-/* 0. FOOTER       	 						    */
+/* 14. FOOTER       	 						    */
 
 
 /*===============================================*/
@@ -768,7 +772,7 @@ h4 {
 /*===============================================*/
 
 
-/* 0. PAGE-CONTACT	     						 */
+/* 15. PAGE-CONTACT	     						 */
 
 
 /*===============================================*/
@@ -813,7 +817,7 @@ h4 {
 /*===============================================*/
 
 
-/* 0. MEDIA	     						 */
+/* 99. MEDIA	     						 */
 
 
 /*===============================================*/
@@ -836,9 +840,6 @@ h4 {
     .navbar .nav {
         max-width: 80%
     }
-    .nav-center.navbar .nav {
-        max-width: 100%
-    }
     .btn_scroll {
         visibility: hidden;
     }
@@ -851,8 +852,7 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-    .page-container,
-    #hero-bloc {
+    .page-container {
         overflow-x: hidden;
         position: relative;
     }
@@ -883,8 +883,7 @@ h4 {
     h4,
     h5,
     h6,
-    p,
-    #disqus_thread {
+    p {
         padding-left: 10px!important;
         padding-right: 10px!important;
     }
