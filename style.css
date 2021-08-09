@@ -555,7 +555,7 @@ h4 {
 
 .btn_scroll {
     position: fixed;
-    right: 100px;
+    right: 200px;
     border: 2px solid white;
 }
 
@@ -705,6 +705,7 @@ h4 {
 }
 
 .article__title {
+    padding: 0 10px;
     font-size: 1.5em;
     font-weight: 500;
 }
@@ -728,7 +729,6 @@ h4 {
 
 .contact__title {
     color: #eebe4c;
-    line-height: 1.2;
     font-size: 2.3em;
     font-weight: 700;
     line-height: 1.2;
@@ -786,10 +786,6 @@ h4 {
     line-height: 2em;
 }
 
-.page-contact__content {
-    position: relative;
-}
-
 .page-contact__text {
     font-size: 1.1em;
     padding: 10px;
@@ -798,6 +794,10 @@ h4 {
 .page-contact__text_bold {
     font-weight: 700;
     font-size: 1.2em;
+}
+
+.page-contact__content {
+    position: relative;
 }
 
 .page-contact__icon {
@@ -1014,5 +1014,24 @@ h4 {
     }
     .btn_scroll {
         visibility: hidden;
+    }
+    .navbar-brand img {
+        max-height: 35px;
+        width: auto;
+    }
+}
+
+@media (min-width: 1390px) and (max-width: 1600px) {
+    .btn_scroll {
+        right: 300px;
+    }
+}
+
+@media (min-width: 1601px) {
+    .btn_scroll {
+        visibility: hidden;
+    }
+    .bg-banniere {
+        background-size: cover!important;
     }
 }

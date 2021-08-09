@@ -9,14 +9,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="">
+    <meta name="description" content="Page de contact de La chouette agence de web design à Lyon : création des web sites de A à Z !">
+
+    <!--index et crawling pour  Google-->
+    <meta name="robots" content="index, follow">
 
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+
+    <!--Lien vers les styles-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--Optimisation - liens vers les dossier minifiés : -->
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/blocs.min.js"></script>
+    <script src="./js/jquery.touchSwipe.min.js" defer></script>
+    <script src="./js/gmaps.min.js"></script>
 
     <title>Contact La chouette Web agence à Lyon</title>
 
@@ -25,7 +37,7 @@
 <body>
     <!-- Principal conteneur -->
     <div class="page-container">
-        <!--Amelioration : ajout des balises sémantique main, header, section, article, form, fieldset, button etc-->
+        <!--Amélioration : ajout des balises sémantique main, header, section, article, form, fieldset, adrress, button etc-->
         <header>
 
             <div class="bloc bgc-white l-bloc" id="navigation">
@@ -94,9 +106,8 @@
                 </div>
 
                 <div class="bloc bgc-white l-bloc bg-lines-h2-bg bg-repeat page-contact__content">
-
                     <!-- ScrollToTop Button -->
-                    <a href="#navigation" title="vers le haut" class="btn btn_scroll" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span><img src="img/img-min/logo-trans-min.png" alt="logo"  class="page-contact__logo-scroll"/></a>
+                    <a href="#navigation" title="vers le haut" class="btn btn_scroll" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span><img src="img/img-min/logo-trans-min.png" alt="curseur et logo vers le haut"  class="page-contact__logo-scroll"/></a>
                     <!-- ScrollToTop Button END-->
 
                     <div class="container bloc-lg">
@@ -129,15 +140,15 @@
                                             <label for="question" class="form__element">Comment nous avez-vous connu ?
                                             <input type="text" placeholder="Choisissez :" class="form-control" id="question" list="list-question" required/>
                                             </label>
-                                            <!--Olga a ajouté plus de fonctionalité : -->
+                                            <!--La fonctionnalité a été rajoutée : -->
                                             <datalist id="list-question">
                                                       
                                                 <option value="Un moteur de recherche"></option>
                                                 <option value="Une publicité papier"></option>
                                                 <option value="Une publicité radio"></option>
                                                 <option value="Le bouche à oreilles"></option>
-                                                <option value="Une lien sur le web"></option>
-    
+                                                <option value="Un lien sur le web"></option>
+                                                
                                             </datalist>
 
 
@@ -197,7 +208,7 @@
 
                         <div class="col-sm-12">
 
-                            <div class="row">
+                            <div>
 
                                 <p class="footer__text text-center"> La chouette agence Web basée à Lyon </p>
 
@@ -238,11 +249,7 @@
 
     </div>
     <!-- Principal conteneur END -->
-    <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/blocs.min.js"></script>
-    <script src="./js/jqBootstrapValidation.js"></script>
-    <script src="./js/formHandler.js"></script>
+
 </body>
 
 </html>
